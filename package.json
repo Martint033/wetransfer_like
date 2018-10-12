@@ -1,0 +1,19 @@
+{
+  "name": "wetransfer_like",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chap-z/wetransfer_like.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chap-z/wetransfer_like/issues"
+  },
+  "homepage": "https://github.com/Chap-z/wetransfer_like#readme"
+}

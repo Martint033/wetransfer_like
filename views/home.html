@@ -1,0 +1,34 @@
+{% extends "layout.html" %} 
+{% block title %}
+<title>Home</title>
+{% endblock %} {% block content %}
+<section class="wrap-home container">
+    <div class="row">
+        <div class="wrap-content col-sm-4">
+            <h1>Wetransfer Like</h1>
+            <p>Remplis les informations pour transmettre ton fichier</p>
+            <form action="result" id="upload_form" class="uploadpic" method="post" enctype="multipart/form-data">
+                <input type="email" name="send" id="send" placeholder="Ton adresse e-mail" class="input-mail" />
+                <input type="email" name="recep" id="recep" placeholder="Envoyer à" class="input-mail" />
+                <div class="upload">
+                    <label for="fileToUpload" class="btn-upload">Ajoutez un fichier</label>
+                    <input name="fileToUpload" value="fileToUpload" id="fileToUpload" class="input-file hidden" type="file" onchange="uploadFile()"/>
+                    {# <div class="progress">
+                        <div id="progressBar" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar"> #}
+                    <progress id="progressBar" value="0" min="0" max="100"></progress>
+                        {# </div>
+                    </div> #}
+                    <h3 id="status"></h3>
+                    <p id='loaded_n_total'></p>
+                </div>
+                <input type="submit" id="submit-picture" value="Transférer" name="submit" class="btn-submit">
+            </form>
+            
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block script %}
+    <script src="assets/js/main.js"></script>
+{% endblock script %}

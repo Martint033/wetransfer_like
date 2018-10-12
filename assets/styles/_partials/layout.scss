@@ -1,0 +1,76 @@
+.background-image {
+    background-image: url('../medias/bk.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    &.bg1 {
+
+        background-image: url("../medias/bg1.jpg");
+    }
+    &.bg2{
+
+        background-image: url('../medias/bg2.jpg');
+    }
+    &.bg3{
+
+        background-image: url('../medias/bg3.jpg');
+    }
+    &.bg4{
+
+        background-image: url('../medias/bg4.jpg');
+    }
+    header {
+        background-color: $blue-green;
+        padding: 20px 20px 6px 20px;
+        .wrap-logo {
+            a {
+                display: flex;
+                opacity: 1;
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+                p {
+                    margin-left: 10px;
+                    color: $white;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                &:hover {
+                    color: $white;
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+}
+footer {
+    background-color: $blue-green;
+    width: 100%;
+    text-align: center;
+    color: $white;
+    padding: 20px 20px 6px 20px;
+}
+// html { 
+//     background: url("../styles/icons/bk.jpg") no-repeat center center fixed; 
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
+//   }
+// .container{
+//     position: relative;
+// }
+// .nav-wrapper {
+//     background-color: $bckgrndclr;
+//     position: fixed;
+// }
+// .page-footer {
+//     background-color: $bckgrndclr;
+//     position: fixed;
+//     width: 100%;
+// bottom: 0;

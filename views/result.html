@@ -1,0 +1,18 @@
+{% extends "layout.html" %} 
+
+{% block title %}
+<title>Votre fichier est envoyé - WeTransfer Like</title>
+{% endblock %} 
+{% block content %}
+<section class="wrap-result container">
+    <div class="row">
+        <div class="wrap-content col-sm-4">
+            <h1>Votre fichier a bien été transmis !</h1>
+            <p>Un e-mail a été envoyé à votre destinataire.</p>
+            <p class="p-dl">Voici le lien de téléchargement de votre fichier :</p>
+            <p class="btn-submit">localhost/wetransfer_like/download/{{ url }}</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
